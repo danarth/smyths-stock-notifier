@@ -1,0 +1,31 @@
+{
+  "name": "smyths-stock-notifier",
+  "version": "0.0.1",
+  "description": "Get notified of products being back in stock at Smyths before anyone else!",
+  "main": "dist/smyths-stock-notifier.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "node lib/smyths-stock-notifier.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanielArthurUK/smyths-stock-notifier.git"
+  },
+  "keywords": [],
+  "author": "Daniel Arthur <me@danielarthur.uk>",
+  "bugs": {
+    "url": "https://github.com/DanielArthurUK/smyths-stock-notifier/issues"
+  },
+  "homepage": "https://github.com/DanielArthurUK/smyths-stock-notifier.git",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.0",
+    "twilio": "^3.42.2"
+  }
+}
